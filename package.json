@@ -1,6 +1,6 @@
 {
   "name": "@pacrypto55/privy-onramp",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Privy on-ramp for Orderly DEXes. Lets a connected user buy crypto straight into their embedded wallet via Privy's funding flow. Adds itself as a row in the shared @pacrypto55/wallet-menu 'Privy Wallet' button.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -26,7 +26,7 @@
   "peerDependencies": {
     "@orderly.network/plugin-core": "^3.1.0",
     "@orderly.network/ui": "^3.1.0",
-    "@pacrypto55/wallet-menu": "^1.0.0",
+    "@pacrypto55/wallet-menu": "^1.1.0",
     "@privy-io/react-auth": "^2.0.0",
     "react": ">=18.0.0",
     "react-dom": ">=18.0.0"
@@ -34,7 +34,7 @@
   "devDependencies": {
     "@orderly.network/plugin-core": "^3.1.3",
     "@orderly.network/ui": "^3.1.3",
-    "@pacrypto55/wallet-menu": "file:../wallet-menu",
+    "@pacrypto55/wallet-menu": "1.1.0",
     "@privy-io/react-auth": "^2.13.0",
     "@types/react": "^18.3.0",
     "@types/react-dom": "^18.3.0",
