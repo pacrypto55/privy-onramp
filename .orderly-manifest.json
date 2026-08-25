@@ -1,0 +1,7 @@
+{
+  "pluginId": "privy-onramp",
+  "npmName": "@pacrypto55/privy-onramp",
+  "repoUrl": "https://github.com/pacrypto55/privy-onramp",
+  "tags": ["Wallet", "Payments"],
+  "usagePrompt": "Privy on-ramp for Orderly Network DEXes that use Privy for wallet auth. Adds a \"Buy USDC\" row to the shared \"Privy Wallet\" menu (from @pacrypto55/wallet-menu) that lets a connected user fund their Privy embedded wallet via Privy's own fundWallet() flow.\n\nBefore installing: this calls Privy's fundWallet(), which requires a funding provider (e.g. MoonPay) to be connected under Configuration -> Funding in the Privy Dashboard for your App ID - a server-side, per-App setting that no client-side config can turn on. If it isn't set up, the plugin still installs and renders correctly; clicking \"Buy USDC\" shows a toast explaining exactly this instead of failing silently.\n\nInstall:\n1. npm install @pacrypto55/privy-onramp (peer deps: react, react-dom, @privy-io/react-auth ^2.x, @orderly.network/plugin-core and ui ^3.1.x, and @pacrypto55/wallet-menu, all installed automatically).\n2. Pass registerPrivyOnrampPlugin() in the plugins array of your OrderlyAppProvider. That's it - it defensively registers the shared wallet-menu host too, so installing this plugin alone is enough even without also installing @pacrypto55/privy-2fa or registering @pacrypto55/wallet-menu yourself.\n\nOptions: label (row text, default \"Buy USDC\") and fundWalletConfig (forwarded as-is to Privy's fundWallet(), default { asset: \"USDC\", amount: \"10\" })."
+}
